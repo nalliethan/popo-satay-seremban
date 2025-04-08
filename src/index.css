@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Ma+Shan+Zheng&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container{
+  padding-inline: 10%;
+}
+
+.container h2{
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+}
+
+.container h2 .text-ch{
+  font-size: 5rem;
+  font-weight: 600;
+  color: #265037;
+  margin-right: 20px;
+}
+
+.text-ch{
+  font-family: "Ma Shan Zheng", cursive;
+}

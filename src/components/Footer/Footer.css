@@ -1,0 +1,40 @@
+footer{ 
+    background: #265037;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center; 
+    
+    border-top: 1px solid gray;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer ul{
+    display: flex;
+    gap: 3rem;
+    color: #fff;
+}
+
+footer ul li{
+    font-size: 1.2rem;
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+
+footer ul li:hover{
+    color: #ffdd81;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    padding-block:1rem;
+}

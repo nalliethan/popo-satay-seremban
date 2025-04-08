@@ -1,0 +1,40 @@
+.contact{
+    padding-block: 5rem 6rem;
+    background-color:#265037;
+    color: #fff;
+}
+
+.contact h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 40px; */
+    text-align: center;
+}
+
+.contact-list{
+    padding-inline: 40px;
+}
+
+.contact-list:nth-child(1),
+.contact-list:nth-child(2){
+    border-right:2px solid white ;
+}
+
+.contact-title{
+    margin-bottom: 3rem;
+}
+
+.contact-title .contact-icon{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-title h3,
+.contact-text p{
+    font-size: 1.75rem;
+}
