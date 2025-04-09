@@ -1,13 +1,13 @@
 .services{
     padding-block: 5rem;
-    height: 100vh;
+    min-height: 100vh;
     background:linear-gradient(180deg, #fff3a5,#f9e26c); 
 }
 
 .services-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 7rem;
+    gap: 6rem;
     margin-top: 6rem;
     margin-inline: 30px;
 }
@@ -62,5 +62,19 @@
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+
+@media (max-width:950px){
+    .services-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+}
+
+@media (max-width:650px){
+    .services-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 

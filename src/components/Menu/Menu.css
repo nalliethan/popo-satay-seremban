@@ -1,6 +1,6 @@
 .menu{
-    padding-top: 5rem;
-    height: 100vh;
+    padding-block: 5rem;
+    min-height: 100vh;
     background-color: #ffdd7c;
 }
 
@@ -43,11 +43,31 @@
     width: 100%;
     text-align: center;
     color: #265037;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 900;
     padding-block: 8px;
 }
 
 .item:hover{
     transform: scale(1.05);
+}
+
+
+
+@media (max-width:900px){
+    .menuItems{
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+    }
+}
+
+@media (max-width:650px){   
+    .menu{
+        padding-inline: 20%;
+    }
+
+    .menuItems{
+        grid-template-columns: repeat(1,1fr);
+        gap: 60px;
+    }
 }

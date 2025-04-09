@@ -12,7 +12,7 @@ footer{
 }
 
 footer img{
-    width: 10%;
+    width: 150px;
 }
 
 footer ul{
@@ -22,7 +22,7 @@ footer ul{
 }
 
 footer ul li{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     list-style: none;
     cursor: pointer;
     color: #fff;
@@ -37,4 +37,17 @@ footer p{
     color: #fff;
     text-align: center;
     padding-block:1rem;
+}
+
+@media (max-width:1000px){
+    footer ul{
+        gap: 2rem;
+    }
+}
+
+@media (max-width:600px){
+    .footer-flex{
+        flex-direction: column;
+        gap: 1rem;
+    }
 }

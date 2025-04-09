@@ -38,3 +38,45 @@
 .contact-text p{
     font-size: 1.75rem;
 }
+
+
+@media (max-width: 1000px){
+    .contact-grid{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 5rem;
+    }
+    
+    .contact-title .contact-icon{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .contact-title{
+        margin-bottom: 2rem;
+    }
+
+    .contact-list:nth-child(2){
+        border: none;
+    }
+}
+
+
+@media (max-width: 650px){
+    .contact-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .contact-title .contact-icon{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .contact-title{
+        margin-bottom: 2rem;
+    }
+
+    .contact-list:nth-child(1){
+        border: none;
+    }
+}
+

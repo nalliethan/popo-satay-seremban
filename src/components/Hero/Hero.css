@@ -30,22 +30,25 @@
 }
 
 .hero-left button{
-    font-size: 1.25rem;
-    /* color: #fff; */
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #265037;
     padding: 18px 30px;
     border: none;
     outline: none;
     border-radius: 50px;
     background-color: #fff8e8;
+    border: 2px solid #fff8e8;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .hero-left button:hover{
-    transform: scale(1.02);
-    font-weight: 700;
-    /* opacity: 0.8; */
+    transform: scale(1.03);
+    color: #fff8e8;
+    font-weight: 900;
+    background-color: #265037;
+    border: 2px solid #fff8e8;
 }
 
 .hero-img{
@@ -70,4 +73,29 @@
 }
 
 
+@media (max-width:900px){
+    .hero{
+        flex-direction:column;
+        padding-block: 7rem;
+    }
 
+    .hero-left img{
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .hero-left h1{
+        font-size: 2rem;
+    }
+
+    .hero-left button{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #265037;
+        padding: 10px 25px;
+    }
+    
+    .hero-img{
+        display: none;
+    }
+}
