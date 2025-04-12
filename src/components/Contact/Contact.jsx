@@ -21,6 +21,7 @@ const Contact = () => {
           title: 'Phone',
           lines: ['011-3798 2686 (Mok)',
           '017-227 9039 (Ms Teo)'],
+          links: ['https://wa.me/601137982686','https://wa.me/60172279039']
         },
         {
           id:3,
@@ -45,23 +46,33 @@ const Contact = () => {
             
             <div className="contact-text">
               {list.lines.map((line,idx) => {
-                return <p key={idx}>{line}</p>
+                if (list.links && list.links[idx]){
+                  return <div className="contact-link">
+                    <a key={idx} href={list.links[idx]} target="_blank"
+                      rel="noopener noreferrer">
+                      <SiWhatsapp className='contact-link-icon'/>
+                      {line}
+                    </a>
+                  </div>
+                  
+                }
+                else{
+                  return <p key={idx}>{line}</p>
+                }
               })}
 
               {list.title === "Address" && (
                 <div className='map-links'>
                   <a href={list.googleMapUrl}
                     target='_blank'
-                    rel='noopener noreferrer'
-                    className='contact-link'>
+                    rel='noopener noreferrer'>
                     <SiGooglemaps className='icon'/>
                     Open in Google Maps    
                   </a>    
 
                   <a href={list.wazeUrl}
                     target='_blank'
-                    rel='noopener noreferrer'
-                    className='contact-link'>
+                    rel='noopener noreferrer'>
                     <SiWaze className='icon'/>
                     Open in Waze    
                   </a>    

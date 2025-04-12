@@ -54,7 +54,8 @@
     margin-top: 1rem;
 }
 
-.map-links a:hover{
+.map-links a:hover,
+.contact-link a:hover{
     color: rgb(249, 199, 71);
 }
 
@@ -64,6 +65,24 @@
 
 .contact-list:nth-child(2) .contact-text p{
     margin-bottom: 1rem;
+}
+
+
+.contact-link{
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-link a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.contact-link a .contact-link-icon{
+    margin-right: 20px;
 }
 
 
