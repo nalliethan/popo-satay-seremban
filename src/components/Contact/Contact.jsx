@@ -47,7 +47,7 @@ const Contact = () => {
             <div className="contact-text">
               {list.lines.map((line,idx) => {
                 if (list.links && list.links[idx]){
-                  return <div className="contact-link">
+                  return <div className="contact-link" key={idx}>
                     <a key={idx} href={list.links[idx]} target="_blank"
                       rel="noopener noreferrer">
                       <SiWhatsapp className='contact-link-icon'/>
