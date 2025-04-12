@@ -13,34 +13,40 @@ const Navbar = () => {
     })
   },[])
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMenu = () => {
+    setMobileMenu(!mobileMenu);
+  }
+
   return (
     <nav className={`container ${sticky ? "dark-nav": ''}`}>
       <img src={logo} alt="" className='nav-logo'/>
 
-      <ul>
-        <li>
-          <Link to='hero' smooth={true} offset={0} duration={300}>
+      <ul className={mobileMenu?"":"hide-mobile-menu"}>
+        <li >
+          <Link to='hero' smooth={true} offset={0} duration={300} onClick={toggleMenu}>
           Home
           </Link>
         </li>
-        <li>
-          <Link to='menu' smooth={true} offset={-40} duration={300}>
+        <li onClick={toggleMenu}>
+          <Link to='menu' smooth={true} offset={-40} duration={300} onClick={toggleMenu}>
           Menu
           </Link>
         </li>
         <li>
-          <Link to='services' smooth={true} offset={-40} duration={300}>
+          <Link to='services' smooth={true} offset={-40} duration={300} onClick={toggleMenu}>
           Services
           </Link>
         </li>
         <li>
-          <Link to='contact' smooth={true} offset={0} duration={300}>
+          <Link to='contact' smooth={true} offset={0} duration={300} onClick={toggleMenu}>
           Contact
           </Link>  
         </li>
       </ul>
 
-      <IoMenu className='menu-bar'/>
+      <IoMenu className='menu-bar' onClick={toggleMenu}/>
+
     </nav>
   )
 }
