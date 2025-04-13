@@ -1,9 +1,9 @@
 import React from 'react'
 import './Menu.css'
-import menuTitle from '../../assets/menu.png'
 import satayImg from '../../assets/satay.png'
 import menuImg3 from '../../assets/menu-3.jpg'
 import menuImg4 from '../../assets/menu-4.jpg'
+import { motion } from 'framer-motion'
 
 const Menu = () => {
   const menuItems = [
@@ -11,27 +11,48 @@ const Menu = () => {
       id: 1, 
       textCH: "鸡肉",
       text: "Chicken",
-      img: satayImg
+      img: satayImg,
     },
     {
       id: 2, 
       textCH: "猪肉",
       text: "Pork",
-      img: satayImg
+      img: satayImg,
     },
     {
       id: 3, 
       textCH: "粉肠",
       text: "Pork Intestine",
-      img: menuImg3
+      img: menuImg3,
     },
     {
       id: 4, 
       textCH: "饭团",
       text: "Ketupat",
-      img: menuImg4
+      img: menuImg4,
     },
   ]
+
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+  
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration:0.4,
+        ease: 'easeIn',
+      },
+    },
+  };
 
   return (
     <div className='menu container'> 
@@ -40,17 +61,17 @@ const Menu = () => {
         Menu
       </h2>
 
-      <div className='menuItems'>
+      <motion.div variants={containerVariants} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} className='menuItems'>
         {menuItems.map((item,idx) => {
-          return <div key={idx} className='item'>
+          return <motion.div variants={cardVariants} key={idx} className='item'>
             <img src={item.img} alt="" />
 
             <p className='text-ch'>{item.textCH}</p>
                 
             <p>{item.text}</p>
-          </div>
+          </motion.div>
         })}
-      </div>
+      </motion.div>
     </div>
   )
 }
