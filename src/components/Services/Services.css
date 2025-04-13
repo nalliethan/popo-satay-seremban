@@ -4,6 +4,11 @@
     background:linear-gradient(180deg, #fff3a5,#f9e26c); 
 }
 
+ .services h2 span{
+    display: block;
+    width: 100%;
+ }
+
 .services-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

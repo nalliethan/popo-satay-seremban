@@ -31,7 +31,7 @@ const Services = () => {
     <div className='services container'>
        <h2>
         <span className='text-ch'>服务</span>
-        What We Provide
+        Services
       </h2>
 
       <div className="services-grid">
