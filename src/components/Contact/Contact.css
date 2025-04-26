@@ -112,6 +112,10 @@
         grid-template-columns: repeat(1,1fr);
     }
     
+    .contact-list{
+        padding-inline:10px;
+    }
+
     .contact-title .contact-icon{
         font-size: 2rem;
         margin-bottom: 0;

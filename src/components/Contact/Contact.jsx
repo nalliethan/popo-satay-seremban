@@ -18,14 +18,14 @@ const Contact = () => {
         {
           id:2,
           icon: FaPhone,
-          title: 'Phone',
+          title: 'Contact',
           lines: ['011-3798 2686 (Mok)',
           '017-227 9039 (Ms Teo)'],
           links: ['https://wa.me/601137982686','https://wa.me/60172279039']
         },
         {
           id:3,
-          title:'Contact',
+          title:'Business Hours',
           icon: FaRegClock,
           lines: ['Wednesday & Saturday', '16:00 - 21:00'],
       },

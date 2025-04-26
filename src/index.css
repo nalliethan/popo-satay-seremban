@@ -33,3 +33,11 @@ html{
 .text-ch{
   font-family: "Ma Shan Zheng", cursive;
 }
+
+
+
+@media (max-width:500px){
+  .container h2 .text-ch{
+    font-size: 4rem;
+  }
+}
