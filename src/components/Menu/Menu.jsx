@@ -1,6 +1,7 @@
 import React from 'react'
 import './Menu.css'
-import satayImg from '../../assets/satay.png'
+import menuImg1 from '../../assets/menu-1.jpeg'
+import menuImg2 from '../../assets/menu-2.jpeg'
 import menuImg3 from '../../assets/menu-3.jpg'
 import menuImg4 from '../../assets/menu-4.jpg'
 import { motion } from 'framer-motion'
@@ -11,13 +12,13 @@ const Menu = () => {
       id: 1, 
       textCH: "鸡肉",
       text: "Chicken",
-      img: satayImg,
+      img: menuImg1,
     },
     {
       id: 2, 
       textCH: "猪肉",
       text: "Pork",
-      img: satayImg,
+      img: menuImg2,
     },
     {
       id: 3, 
